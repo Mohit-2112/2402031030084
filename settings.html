@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/mandala.png">
+    <title>Settings Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #ddd;
+        }
+        .navbar img {
+            width: 50px;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .settings {
+            padding: 20px;
+        }
+        .settings h2 {
+            font-size: 24px;
+        }
+        .setting-option {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .recent-activity {
+            text-align: center;
+            padding: 20px;
+        }
+        .post {
+            width: 60%;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+        }
+        .logout {
+            text-align: center;
+            padding: 20px; 
+            background: #eee;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Index.html"><img src="images/mandala.png" alt="Logo"></a>
+        <div class="nav-links">
+            <a href="Index.html">Home</a>
+            <a href="#">Meetings</a>
+            <a href="#">Instructor</a>
+            <a href="#">Schedule</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Profile</a>
+        </div>
+    </div>
+    
+    <div class="settings">
+        <h2>Settings</h2>
+        <p>Account Preferences</p>
+        <div class="setting-option">Notification Settings <span>On</span></div>
+        <div class="setting-option">Privacy Settings <span>Private</span></div>
+        <div class="setting-option">Language <span>English</span></div>
+    </div>
+    
+    <div class="recent-activity">
+        <h2>Recent Activity</h2>
+        <button>View All</button>
+        <div class="post">Jane Smith - Enjoying the evening breeze</div>
+        <div class="post">Alex Johnson - Starting the day with a cup of coffee</div>
+    </div>
+    
+    <div class="logout">Log Out</div>
+    
+    <script>
+        document.querySelector('.logout').addEventListener('click', function() {
+            alert('Logging out...');
+        });
+    </script>
+</body>
+</html>

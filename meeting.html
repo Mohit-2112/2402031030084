@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/mandala.png">
+    <title>Meeting</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* background: #d9e7ff; */
+            background-image: url(./images/BG.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        .meeting-container {
+            position: relative;
+            width: 80%;
+            max-width: 900px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-screen {
+            width: 100%;
+            height: 500px;
+            background: url('./images/image\ 10.jpg') no-repeat center/cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 10px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .control-button {
+            background: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .control-button:hover {
+            background: #e0e0e0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: url('./images/mandala.png') no-repeat center/cover;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Index.html"><div class="logo"></div></a>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="#">Meetings</a></li>
+                <li><a href="#">Instructor</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="meeting-container">
+        <div class="video-screen"></div>
+        <div class="controls">
+            <button class="control-button" onclick="toggleMute()">🔇 Unmute</button>
+            <button class="control-button" onclick="toggleVideo()">🎥 Start Video</button>
+            <button class="control-button">🛡 Security</button>
+            <button class="control-button">👥 Participants</button>
+            <button class="control-button">💬 Chat</button>
+            <button class="control-button">📤 Share Screen</button>
+            <button class="control-button">📊 Polling</button>
+            <button class="control-button">⏺ Record</button>
+            <button class="control-button">🔄 Breakout Rooms</button>
+            <button class="control-button">😊 Reactions</button>
+        </div>
+    </div>
+    <script>
+        function toggleMute() {
+            alert("Toggled Mute");
+        }
+        function toggleVideo() {
+            alert("Toggled Video");
+        }
+    </script>
+</body>
+
+</html>
